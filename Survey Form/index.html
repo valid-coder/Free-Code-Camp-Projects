@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form id="survey-form" class="survey">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">This survey form is to help us in collecting data to further improve our services</p>
+            <fieldset>
+                <label id="name-label" for="name">Enter your first name: <input id="name" type="text" maxlength="20" placeholder="First name" name="name-label" required></label> <label>Enter your second name: <input id="s-name" type="text" maxlength="20" placeholder="Second name" required></label>
+                <label id="email-label" for="email">Enter your Student email: <input id="email" name="user-email" type="email" placeholder="Enter email here" required></label>
+                <label for="std-pass">Enter your Student email password: <input id="std-pass" type="password" name="student-password" placeholder="Enter password here"></label>
+                <label for="adm-number">Enter your admission number: <input id="adm-number" type="text" pattern="[0-9][0-9][0-9][0-9][0-9][0-9]"></label>
+                <label id="number-label" for="number">Enter your study year: <input id="number" type="number" max="50" min="16" placeholder="Age"></label>
+                <label for="student-type">What type of student are you:
+                    <select id="dropdown" name="std-type" required>
+                        <option value="">(select one)</option>
+                        <option value="1">Full time Student</option>
+                        <option value="2">Evening Student</option>
+                        <option value="3">International Student</option>
+                        <option value="4">Hybrid Student</option>
+                        <option value="5">Online Student</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Do you like studying in stathmore:</legend>
+                <label><input id="yes" type="radio" name="yes-no-maybe" class="container" value="1" checked>Yes</label>
+                <label><input id="no" type="radio" name="yes-no-maybe" class="container" value="2" >No</label>
+                <label><input id="maybe" type="radio" name="yes-no-maybe"class="container" value="3" >Maybe</label>
+            </fieldset>
+            <fieldset>
+                <legend>What activites do you participate in in school:(Check all that are applicable)</legend>
+                <label><input id="hockey" type="checkbox" name="activities" value="hockey" class="container" >Hockey</label>
+                <label><input id="table-tennis" type="checkbox" name="activities" value="table-tennis" class="container">Table Tennis</label>
+                <label><input id="chess" type="checkbox" name="activities" value="chess" class="container">Chess</label>
+                <label><input id="debate" type="checkbox" name="activites" value="debate" class="container">Debate</label>
+                <label><input id="volunteering" type="checkbox" name="activities" value="volunteering" class="container">Volunteering</label>
+                <label><input id="mentoring" type="checkbox" name="avtivities" value="mentoring" class="container">Mentoring</label>
+                <label><input id="archery" type="checkbox" name="activities" value="archery" class="container">Archery</label>
+            </fieldset>
+            <fieldset>
+                <legend>Please share your feedback</legend>
+                <textarea id="feedback" name="feedback" rows="3" cols="10" placeholder="What is your opinion of strathmore" required></textarea>
+            </fieldset>
+            <input id="submit" type="submit" value="SUBMIT">
+        </form>  
+    </body>
+</html>
+

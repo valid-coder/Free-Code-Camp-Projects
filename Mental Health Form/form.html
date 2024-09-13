@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <h1 id="title">Be Honest for You</h1>
+ <p id="description">Your mental health is your responsibility, but a helping hand is important. You are not alone.</p>
+ <form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">
+            Enter your first name: 
+            <input id="name" type="text" placeholder="enter your first name here" required>
+        </label>
+        <label for="second-name">
+            Enter your middle name: 
+            <input id="second-name" type="text" placeholder="enter your second name here">
+        </label>
+        <label for="last-name">
+            Enter your last name: 
+            <input id="last-name" type="text" placeholder="enter your last name here" required>
+        </label>
+        <label id="number-label" for="number">
+            Enter your age:
+            <input id="number" type="number" min="5" max="100" placeholder="enter your age here">
+        </label>
+        <label for="phone-number">
+            Enter your phone number: 
+            <input id="phone-number" type="tel" placeholder="enter your phone number here" required>
+        </label>
+        <label id="email-label" for="email">
+            Enter your email address:
+            <input id="email" type="email" placeholder="enter email here" required>
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>How much do you know about your mental state: </legend>
+        <label for="Question-1">
+            <input class="inline" id="Question-1" type="checkbox" name="Q-1" value="q-1">
+            I have done a mental health survey before
+        </label>
+        <label for="Question-2">
+            <input class="inline" id="Question-2" type="checkbox" name="Q-2" value="q-2">
+            I have had a mental illness before
+        </label>
+        <label for="Question-3">
+            <input class="inline" id="Question-3" type="checkbox" name="Q-3" value="q-3">
+            I have gone through a mental breakdown before
+        </label>
+        <label for="Question -4">
+            <input class="inline" id="Question-4" type="checkbox" name="Q-4" value="q-4">
+            I have been on medication for a mental illness 
+        </label>
+        <label for="Question-5">
+            <input class="inline" for="Question-5" type="checkbox" name="Q-5" value="q-5">
+            I have been in a mental health institute before
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Do you have a creative outlet:</legend>
+        <label for="ans-1">
+            <input class="inline" id="ans-1" type="radio" name="ans-1" value="ans1" checked>
+            YES
+        </label>
+        <label>
+            <input class="inline" id="ans-1" type="radio" name="ans-1" value="ans2">
+            NO
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Do you have a friend or friends to talk to:</legend>
+        <label for="ans-2" class="inline">
+            <input class="inline" id="ans-2" type="radio" name="ans-2" value="ans3" checked>
+            YES
+        </label>
+        <label for="ans-2" class="inline">
+            <input class="inline" id="ans-2" type="radio" name="ans-2" value="ans4">
+            NO
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Do you feel lonely:</legend>
+        <label for="ans-3" class="inline">
+            <input class="inline" id="ans-3" type="radio" name="ans-3" value="ans5" checked>
+            YES
+        </label>
+        <label for="ans-3" class="inline">
+            <input class="inline" id="ans-3" type="radio" name="ans-3" value="ans">
+            NO
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Please pick an option (required)</legend>
+        <p id="p-dropdown">What mental illness do you have?</p>
+        <select id="dropdown">
+            <option value="1">
+                (select one option)
+            </option>
+            <option value="2">
+                Depression
+            </option>
+            <option value="3">
+                Obsessive Compulsive Disorder 
+            </option>
+            <option value="4">
+                Attention Deficit Hyperactivity Disorder
+            </option>
+            <option value="5">
+                Social Anxiety Disorder
+            </option>
+            <option value="6">
+                Alcohol Use Disorder
+            </option>
+            <option value="7">
+                Body Dysmorphic Disorder
+            </option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Describe your emotional and mental state</legend>
+        <textarea id="additional-info" rows="3" cols="10" placeholder="Add information here"></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit">
+ </form>
+ <footer>
+    <p id="link">For further you can visit our website: <a href="https://allngunjumaina.wordpress.com/">mentalhealthforyou</a></p>
+ </footer>
+</body>
+</html>

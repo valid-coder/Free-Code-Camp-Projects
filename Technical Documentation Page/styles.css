@@ -1,0 +1,29 @@
+@media (prefers-reduced-motion: no-preference) {
+    *{
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    padding: 0 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 90%;
+    background-color: azure;
+}
+
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightcyan;
+    padding:  4px 6px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+pre code {
+    display: block;
+    border-radius: 6px;
+    overflow-y: auto;
+    max-height: 200px;
+    width: 100%;
+}

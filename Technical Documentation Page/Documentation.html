@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Documentation Page</title>
+</head>
+<body>
+    <h1>Python : The beginners coding language.</h1>
+    <nav id="navbar">
+        <header>
+            This is a beginners guide to understanding the fundamentals of python, an easy and robust coding language with a variety of uses.
+            <nav>
+                <h3>Main Topics</h3>
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#Python_101">
+                            Python 101
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Key_Features_of_Python">
+                            Key Features of Python
+                        </a>
+                        <li>
+                            <a class="nav-link" href="#Readable_and_expressive_syntax">
+                                1. Readable and Expressive Syntax.
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Dynamically_typed">
+                                2. Dynamically_typed
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Use_Cases_of_python">
+                            Use Cases of python
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Data_Structures_in_Python">
+                            Data Structures in Python
+                        </a> 
+                        <li>
+                            <a class="nav-link" href="#Lists">
+                                1. Lists
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Tuples">
+                                2. Tuples.
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#Dictionaries">
+                                3. Dictionaries
+                            </a>
+                        </li>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#Popular_Python_Libraries_and_Frameworks">
+                            Popular Python Libraries and Frameworks
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Python_101" role="region" aria-labelledby="Python_101">
+            <header class="py_info">
+               <h2>Python 101</h2> 
+            </header>
+            <p>
+                Python is a powerful, high-level, interpreted programming language, known for its simplicity and elegance. It was created by Guido van Rossum and first released in 1991. Python's design philosophy emphasizes readability and ease of use, making it an ideal language for both beginners and experienced developers. It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+            </p>
+        </section>
+        <section class="main-section py-info" id="Key_Features_of_Python" role="region" aria-labelledby="Key_Features_of_Python">
+            <header>
+               <h2>Key Features of Python</h2>
+            </header>
+            <p>
+                <h3 id="Readable_and_expressive_syntax" role="region" aria-labelledby="Readable_and_expressive_syntax">
+                    1. Readable and Expressive Syntax.
+                </h3>
+                Python’s syntax is designed to be easy to read and write. It uses indentation to define code blocks instead of braces or keywords, which encourages clean and readable code. The language’s simplicity allows developers to focus on solving problems rather than understanding complex syntax.
+            </p>
+            <pre>
+                <code class="code">
+                    def factorial(n):
+                        """Calculate the factorial of a non-negative integer n."""
+                        if n == 0 or n == 1:
+                            return 1
+                        else:
+                            return n * factorial(n - 1)
+    
+                    # Example usage
+                    number = 5
+                    result = factorial(number)
+                    print(f"The factorial of {number} is {result}")
+                </code>
+            </pre>
+            <p>
+                <h3 id="Dynamically_typed" role="region" aria-labelledby="Dynamically_typed">
+                    2. Dynamically typed
+                </h3>
+                In Python, you do not need to declare the type of a variable. The type is determined at runtime, making the language flexible and easy to use. However, this can also lead to runtime errors if the programmer is not careful.
+            </p>
+            <pre>
+                <code class="code">
+                    # Python code demonstrating dynamic typing
+    
+                    # Assign an integer value to the variable 'x'
+                    x = 10
+                    print(f"x is of type {type(x)} with value: {x}")
+    
+                    # Reassign a string value to the same variable 'x'
+                    x = "Hello, Python!"
+                    print(f"x is now of type {type(x)} with value: {x}")
+    
+                    # Reassign a list to the same variable 'x'
+                    x = [1, 2, 3, 4, 5]
+                    print(f"x is now of type {type(x)} with value: {x}")
+    
+                    # Reassign a function to the same variable 'x'
+                    def greet():
+                        return "Hello, again!"
+    
+                    x = greet
+                    print(f"x is now of type {type(x)} with value: {x()}")
+                </code>
+            </pre>
+        </section>
+        <section class="main-section py-info" id="Use_Cases_of_python" role="region" aria-labelledby="Use_Cases_of_python">
+            <header>
+                <h2>
+                    Use Cases of python
+                </h2>
+            </header>
+            <p>
+                Python is versatile and used in various domains, including:
+                <ul>
+                    <li>
+                        Automation and Scripting: Python is excellent for writing scripts to automate repetitive tasks or system administration.   
+                    </li>
+                    <li>
+                        Machine Learning and AI: Libraries like TensorFlow, PyTorch, and scikit-learn are widely used for machine learning projects.
+                    </li>
+                    <li>
+                        Data Science: Libraries such as NumPy, Pandas, and Matplotlib make Python a preferred choice for data analysis and visualization. 
+                    </li>
+                    <li>
+                        Web Development: Frameworks like Django and Flask are popular for building web applications. 
+                    </li>
+                </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Data_Structures_in_Python" role="region" aria-labelledby="Data_Structures_in_Python">
+            <header>
+                <h2>Data Structures in Python</h2>
+            </header>
+            <p>
+                <h3 id="Lists" role="region" aria-labelledby="Lists">
+                    1. Lists
+                </h3>
+                Lists are mutable sequences in Python that can store elements of different data types. They are versatile and widely used for storing collections of items.
+            </p>
+            <pre>
+                <code class="code">
+                    # Creating a list of fruits
+                    fruits = ["apple", "banana", "cherry", "date"]
+    
+                    # Accessing elements
+                    print(f"First fruit: {fruits[0]}")
+                    print(f"Last fruit: {fruits[-1]}")
+    
+                    # Modifying an element
+                    fruits[1] = "blueberry"
+                    print(f"Modified list: {fruits}")
+    
+                    # Adding elements to the list
+                    fruits.append("elderberry")
+                    print(f"List after appending a new fruit: {fruits}")
+    
+                    # Inserting an element at a specific position
+                    fruits.insert(2, "fig")
+                    print(f"List after inserting a fruit at index 2: {fruits}")
+    
+                    # Removing elements from the list
+                    fruits.remove("date")
+                    print(f"List after removing 'date': {fruits}")
+    
+                    # Slicing the list
+                    first_two_fruits = fruits[:2]
+                    print(f"First two fruits: {first_two_fruits}")
+    
+                    # Iterating over the list
+                    print("All fruits in the list:")
+                    for fruit in fruits:
+                        print(fruit)
+    
+                    # Checking for membership
+                    if "apple" in fruits:
+                        print("Apple is in the list.")
+    
+                    # Length of the list
+                    print(f"Total number of fruits: {len(fruits)}")
+    
+                    # Clearing the list
+                    fruits.clear()
+                    print(f"List after clearing: {fruits}")
+                </code>
+            </pre>
+            <p>
+                <h3 id="Tuples" role="region" aria-labelledby="Tuples">
+                    2. Tuples
+                </h3>
+                Tuples are immutable sequences, meaning that once they are created, their elements cannot be changed. They are used for storing fixed collections of items.
+            </p>
+            <pre>
+                <code class="code">
+                    # Creating and accessing a tuple
+                    coordinates = (10.5, 20.3)
+                    print(f"X: {coordinates[0]}, Y: {coordinates[1]}")
+    
+                    # Tuple packing and unpacking
+                    person = ("John Doe", 30, "Engineer")
+                    name, age, profession = person
+                    print(f"Name: {name}, Age: {age}, Profession: {profession}")
+    
+                    # Using tuples as dictionary keys
+                    locations = {
+                        (40.7128, -74.0060): "New York",
+                        (34.0522, -118.2437): "Los Angeles"
+                    }
+                    print(f"Location: {locations[(40.7128, -74.0060)]}")
+                </code>
+            </pre>
+            <p>
+                <h3 id="Dictionaries" role="region" aria-labelledby="Dictionaries">
+                    3. Dictionaries
+                </h3>
+                Dictionaries in Python are an unordered, mutable collection of key-value pairs. They are used to store data values where each value is associated with a unique key. This allows for efficient data retrieval based on the key, making dictionaries a versatile and powerful data structure.
+            </p>
+            <pre>
+                <code class="code">
+                    # Creating a dictionary
+                    student = {"name": "Alice", "age": 23, "major": "Computer Science"}
+                    
+                    # Accessing a value by its key
+                    print(f"Name: {student['name']}")
+                    
+                    # Adding or updating a key-value pair
+                    student["age"] = 24
+                    student["graduation_year"] = 2024
+                    
+                    # Removing a key-value pair
+                    del student["major"]
+                    
+                    # Checking for a key in the dictionary
+                    if "graduation_year" in student:
+                        print(f"Graduation Year: {student['graduation_year']}")  
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="Popular_Python_Libraries_and_Frameworks" role="region" aria-labelledby="Popular_Python_Libraries_and_Frameworks">
+            <header>
+                <h2>Popular Python Libraries and Frameworks</h2>
+            </header>
+            <p>
+                <ol>
+                    <li>
+                        Web Development.
+                    </li>
+                    <li>
+                        Data Science and Machine Learning.
+                    </li>
+                    <li>
+                       Automation and Scripting. 
+                    </li>
+                    <li>
+                        GUI Development.
+                    </li>
+                </ol>
+            </p>
+        </section>
+    </main>
+</body>
+</html>
